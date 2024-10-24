@@ -1,0 +1,9 @@
+C:\desenvhome-pxc\ProvaCSharp.Domain\bin\Debug\ProvaCSharp.Domain.dll
+C:\desenvhome-pxc\ProvaCSharp.Domain\bin\Debug\ProvaCSharp.Domain.pdb
+C:\desenvhome-pxc\ProvaCSharp.Domain\bin\Debug\ProvaCsharp.Data.dll
+C:\desenvhome-pxc\ProvaCSharp.Domain\bin\Debug\ProvaCsharp.Data.pdb
+C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.csprojAssemblyReference.cache
+C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.csproj.CoreCompileInputs.cache
+C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.csproj.CopyComplete
+C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.dll
+C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.pdb
