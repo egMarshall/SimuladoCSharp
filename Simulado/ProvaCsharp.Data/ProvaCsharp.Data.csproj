@@ -50,6 +50,7 @@
     <Compile Include="Repository\ChaveRepositorio.cs" />
     <Compile Include="Repository\IRepositorio.cs" />
     <Compile Include="Utils\Retorno.cs" />
+    <Compile Include="Utils\RetornoListaChave.cs" />
     <Compile Include="Utils\SqlCommandExtession.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

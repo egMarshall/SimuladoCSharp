@@ -76,9 +76,13 @@ namespace Bergs.ProvacSharp
             return new Retorno(true, 00, "Chave adicionada com sucesso");
         }
 
-        public List<ChaveFavorita> ListarChavesFavoritas()
+        public RetornoListaChave<List<ChaveFavorita>> ListarChavesFavoritas()
         {
-            return Chaves;
+            var retorno = new RetornoListaChave<List<ChaveFavorita>>(true, 00, "Sucesso.");
+
+            retorno.Result = Chaves;
+
+            return retorno;
         }
 
         public Retorno EnviarPIX(string strChave, string strValor)

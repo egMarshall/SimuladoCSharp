@@ -34,7 +34,6 @@ namespace Bergs.ProvacSharp
             Console.Write("\nInforme a opção desejada:");
         }
 
-
         public void ExecutarMenu()
         {
             Conta contaUsuario = new Conta();
@@ -166,7 +165,7 @@ namespace Bergs.ProvacSharp
                         Console.ReadKey();
                         break;
                     case 3:
-                        var chaves3 = contaUsuario.ListarChavesFavoritas();
+                        var chaves3 = contaUsuario.ListarChavesFavoritas().Result;
 
                         if (chaves3.Count == 0)
                         {
@@ -189,7 +188,7 @@ namespace Bergs.ProvacSharp
                         Console.ReadKey();
                         break;
                     case 4:
-                        var chaves4 = contaUsuario.ListarChavesFavoritas();
+                        var chaves4 = contaUsuario.ListarChavesFavoritas().Result;
                         if (chaves4.Count == 0)
                         {
                             Console.Clear();
