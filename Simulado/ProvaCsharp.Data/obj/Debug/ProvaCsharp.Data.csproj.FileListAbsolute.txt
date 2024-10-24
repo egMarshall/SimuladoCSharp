@@ -4,3 +4,9 @@ C:\desenvhome-pxc\ProvaCsharp.Data\obj\Debug\ProvaCsharp.Data.csprojAssemblyRefe
 C:\desenvhome-pxc\ProvaCsharp.Data\obj\Debug\ProvaCsharp.Data.csproj.CoreCompileInputs.cache
 C:\desenvhome-pxc\ProvaCsharp.Data\obj\Debug\ProvaCsharp.Data.dll
 C:\desenvhome-pxc\ProvaCsharp.Data\obj\Debug\ProvaCsharp.Data.pdb
+C:\Users\E37056\Desktop\Simulado\ProvaCsharp.Data\bin\Debug\ProvaCsharp.Data.dll
+C:\Users\E37056\Desktop\Simulado\ProvaCsharp.Data\bin\Debug\ProvaCsharp.Data.pdb
+C:\Users\E37056\Desktop\Simulado\ProvaCsharp.Data\obj\Debug\ProvaCsharp.Data.csprojAssemblyReference.cache
+C:\Users\E37056\Desktop\Simulado\ProvaCsharp.Data\obj\Debug\ProvaCsharp.Data.csproj.CoreCompileInputs.cache
+C:\Users\E37056\Desktop\Simulado\ProvaCsharp.Data\obj\Debug\ProvaCsharp.Data.dll
+C:\Users\E37056\Desktop\Simulado\ProvaCsharp.Data\obj\Debug\ProvaCsharp.Data.pdb

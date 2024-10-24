@@ -21,72 +21,66 @@ namespace Bergs.ProvacSharp
             _acessoBancoDados = new AcessoBancoDados(database);
         }
 
-        public void Adicionar(ChaveFavoritaDTO chave)
+        public Retorno Adicionar(List<ChaveFavoritaDTO> chaves)
         {
             try
             {
-                _acessoBancoDados.Abrir();
-
-                string sql = "INSERT INTO CHAVE (TIPO_CHAVE, NOME_TITULAR, QTDE_PIX, VLR_TOTAL_PIX, CHAVE) VALUES(@TipoChave, @NomeTitular, @QtdePix, @VlrTotalPix, @Chave)";
-
-                SqlCommand command = new SqlCommand(sql);
-                command.CommandType = CommandType.Text;
-
-                var tipoChave = new SqlParameter("@TipoChave", DbType.Int32);
-                tipoChave.Value = chave.Id;
-
-                var nomeTitular = new SqlParameter("@NomeTitular", DbType.String);
-                nomeTitular.Value = chave.NomeTitular;
-
-                var qntePix = new SqlParameter("@QtdePix", DbType.Int32);
-                qntePix.Value = chave.Quantidade;
-
-                var vlrTotalPix = new SqlParameter("@VlrTotalPix", DbType.Currency);
-                // FORMATAR VALOR PARA CURRENCY
-                vlrTotalPix.Value = chave.ValorTotal;
-
-                var chavePix = new SqlParameter("@Chave", DbType.String);
-                chavePix.Value = chave.Chave;
-
-                command.Parameters.Add(tipoChave);
-                command.Parameters.Add(nomeTitular);
-                command.Parameters.Add(qntePix);
-                command.Parameters.Add(vlrTotalPix);
-                command.Parameters.Add(chavePix);
-
-                _acessoBancoDados.ExecutarInsert(command.GetGeneratedQuery());
-                _acessoBancoDados.EfetivarComandos();
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erro ao inserir chave: " + ex.Message);
-            }
-            finally
-            {
-                _acessoBancoDados.Dispose();
-            }
-        }
-
-        public void DeletarTodos()
-        {
-           try
-            {
+                //Deleta os dados antes
                 _acessoBancoDados.Abrir();
 
                 string sql = "DELETE FROM CHAVE";
 
                 _acessoBancoDados.ExecutarDelete(sql);
-                _acessoBancoDados.EfetivarComandos();
-            } 
-            catch (Exception ex)
+            } catch
             {
-                throw new Exception("Erro ao deletar chaves: " + ex.Message);
+                return new Retorno(false, 980, "Falha ao deletar registros.");
+            }
+            try {
+
+                foreach (var chave in chaves)
+                {
+                    string sql = "INSERT INTO CHAVE (TIPO_CHAVE, NOME_TITULAR, QTDE_PIX, VLR_TOTAL_PIX, CHAVE) VALUES(@TipoChave, @NomeTitular, @QtdePix, @VlrTotalPix, @Chave)";
+
+                    SqlCommand command = new SqlCommand(sql);
+                    command.CommandType = CommandType.Text;
+
+                    var tipoChave = new SqlParameter("@TipoChave", DbType.Int32);
+                    tipoChave.Value = chave.Id;
+
+                    var nomeTitular = new SqlParameter("@NomeTitular", DbType.String);
+                    nomeTitular.Value = chave.NomeTitular;
+
+                    var qntePix = new SqlParameter("@QtdePix", DbType.Int32);
+                    qntePix.Value = chave.Quantidade;
+
+                    var vlrTotalPix = new SqlParameter("@VlrTotalPix", DbType.Currency);
+
+                    vlrTotalPix.Value = chave.ValorTotal;
+
+                    var chavePix = new SqlParameter("@Chave", DbType.String);
+                    chavePix.Value = chave.Chave;
+
+                    command.Parameters.Add(tipoChave);
+                    command.Parameters.Add(nomeTitular);
+                    command.Parameters.Add(qntePix);
+                    command.Parameters.Add(vlrTotalPix);
+                    command.Parameters.Add(chavePix);
+
+                    _acessoBancoDados.ExecutarInsert(command.GetGeneratedQuery());
+                }
+                _acessoBancoDados.EfetivarComandos();
+
+            }
+            catch
+            {
+                return new Retorno(false, 990, "Falha ao persistir registros.");
             }
             finally
             {
                 _acessoBancoDados.Dispose();
             }
+            return new Retorno(true, 0, "Chaves persistidas com sucesso.");
+
         }
     }
 }

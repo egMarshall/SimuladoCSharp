@@ -7,3 +7,12 @@ C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.csproj.CoreCom
 C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.csproj.CopyComplete
 C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.dll
 C:\desenvhome-pxc\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.pdb
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\bin\Debug\ProvaCSharp.Domain.dll
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\bin\Debug\ProvaCSharp.Domain.pdb
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\bin\Debug\ProvaCsharp.Data.dll
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\bin\Debug\ProvaCsharp.Data.pdb
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.csprojAssemblyReference.cache
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.csproj.CopyComplete
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.dll
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp.Domain\obj\Debug\ProvaCSharp.Domain.pdb

@@ -118,35 +118,15 @@ namespace Bergs.ProvacSharp
 
             var repositorio = new ChaveRepositorio(caminhoDoBanco);
 
-            try
-            {
-                repositorio.DeletarTodos();
-            }
-            catch (Exception ex) {
-                return new Retorno(false, 980, "Falha ao deletar registros - " + ex.Message);
-            }
+            var listaChavesDTO = new List<ChaveFavoritaDTO>();
 
-            try
+            foreach(var chave in Chaves)
             {
-                foreach (var chave in Chaves)
-                {
-                    var chaveDTO = new ChaveFavoritaDTO(
-                        chave.NomeTitular,
-                        chave.Chave,
-                        chave.TipoChave.ToString(),
-                        chave.ValorTotal,
-                        chave.Quantidade
-                        );
-
-                    repositorio.Adicionar(chaveDTO);
-                }
-            } catch (Exception ex)
-            {
-                return new Retorno(false, 990, ex.Message);
+                var chaveDTO = new ChaveFavoritaDTO(chave.NomeTitular, chave.Chave, chave.TipoChave.ToString(), chave.ValorTotal, chave.Quantidade);
+                listaChavesDTO.Add(chaveDTO);
             }
 
-
-            return new Retorno(true, 00, "Dados persistidos com sucesso.");
+            return repositorio.Adicionar(listaChavesDTO);
         }
 
     }

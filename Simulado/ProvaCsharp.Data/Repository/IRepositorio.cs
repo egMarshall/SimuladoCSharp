@@ -8,7 +8,6 @@ namespace Bergs.ProvacSharp
 {
     public interface IRepositorio<T>
     {
-        void Adicionar(T item);
-        void DeletarTodos();
+        Retorno Adicionar(List<T> item);
     }
 }

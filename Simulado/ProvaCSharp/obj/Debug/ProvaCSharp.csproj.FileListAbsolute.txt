@@ -6,3 +6,8 @@ C:\desenvhome-pxc\ProvaCSharp\obj\Debug\ProvaCSharp.csproj.CoreCompileInputs.cac
 C:\desenvhome-pxc\ProvaCSharp\obj\Debug\ProvaCSharp.csproj.CopyComplete
 C:\desenvhome-pxc\ProvaCSharp\obj\Debug\ProvaCSharp.exe
 C:\desenvhome-pxc\ProvaCSharp\obj\Debug\ProvaCSharp.pdb
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp\obj\Debug\ProvaCSharp.csprojAssemblyReference.cache
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp\obj\Debug\ProvaCSharp.csproj.CoreCompileInputs.cache
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp\obj\Debug\ProvaCSharp.csproj.CopyComplete
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp\obj\Debug\ProvaCSharp.exe
+C:\Users\E37056\Desktop\Simulado\ProvaCSharp\obj\Debug\ProvaCSharp.pdb
